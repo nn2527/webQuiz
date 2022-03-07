@@ -1,0 +1,68 @@
+<html>
+<head>
+  <link rel = "stylesheet" href="webQuiz.css">
+  <script src="webQuiz.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="start">
+    <button id="button" onclick="question()" onmousedown="sound.play()">Start</button>
+  </div>
+  <div>
+    <form id="quiz" name="quiz">
+      <p>1. What is the full form of HTML?</p>
+      <input id="textbox" type="text" name="txt">
+
+      <p id="q2">2. What is the full form of CSS?</p>
+      <input type="radio" name="qn1" id="qA2" value="a">
+      <label>Center Style Sheet</label><br>
+      <input type="radio" name="qn1" id="qA2" value="b">
+      <label>Creative Styling sheets</label><br>
+      <input type="radio" name="qn1" id="qA2" value="c">
+      <label>Cascading Style Sheets</label><br>
+      <input type="radio" name="qn1" id="qA2" value="d">
+      <label>Coding Smart Site</label><br>
+
+      <p>3. JavaScript is used for...</p>
+      <input type="radio" id="c1" value="1" name="qn2">
+      <label>Making coffee</label><br>
+      <input type="radio" id="c1" value="2" name="qn2">
+      <label>Controlling human mind</label><br>
+      <input type="radio" id="c1" value="3" name="qn2">
+      <label>Beautifying HTML text</label><br>
+      <input type="radio" id="c1" value="4" name="qn2">
+      <label>Making interactive websites</label><br>
+
+      <p>4. What does the innerHTML property do in JS?</p>
+      <input type="radio" id="c21" value="1" name="qn3">
+      <label>It defines the HTML content</label><br>
+      <input type="radio" id="c21" value="2" name="qn3">
+      <label>It adds styling to the HTML</label><br>
+      <input type="radio" id="c21" value="3" name="qn3">
+      <label>It calls a function</label><br>
+      <input type="radio" id="c21" value="4" name="qn3">
+      <label>It runs a loop</label><br>
+
+      <p>5. What is most appropriate naming convention for variables, arrays and other elements in JS? Hint : sorryNoHint ;) <input id="textbox1" type="text" name="txt1"></p>
+      <br>
+      <input name="but" id="btn" type="button" onclick="check()" onmousedown="sound.pause()" value="SUBMIT" style="width:100px; height:40px">
+    </form>
+  </div>
+  <div id="time"></div>
+  <div id="sub">
+    <p id="correct"></p>
+    <p id="message"></p>
+    <center><img id="picture"></center>
+    <p>Answers:</p>
+    <div>1. Hyper Text Markup Language<br>
+      2. Cascading Style Sheet<br>
+      3. 4. Making interactive websites<br>
+      4. 1. It defines the HTML content<br>
+      5. camelCase
+    </div>
+  </div>
+  <button id="replayButton" onclick="replay()">Replay</button>
+</body>
+</html>
